@@ -2,33 +2,35 @@ import * as React from "react";
 
 const About = () => {
   return (
-    <div className="h-screen bg-white grid  items-center font-semibold">
-      <div className="flex row-span-6  flex-col gap-y-5 xl:gap-y-10 md:gap-y-8  p-6 xl:p-16 md:p-12 ">
-        <div className="flex items-center">
-          <h1 className="text-6xl xl:text-8xl md:text-7xl text-black">
-            {" "}
-            Hello{" "}
+    <div className="h-screen bg-white flex flex-col  justify-center items-center font-semibold ">
+      <div className="flex-grow flex items-center">
+        <div className="grid gap-y-5 place-items-center xl:gap-y-10 md:gap-y-8">
+          <div className="flex items-center">
+            <h1 className="text-6xl xl:text-8xl md:text-7xl text-gray-600">
+              {" "}
+              Hello{" "}
+            </h1>
+            <img
+              className="p-5 md:h-32 md:w-32 h-28 w-28"
+              src="hello.gif"
+              alt="World!"
+            />
+          </div>
+          <h1 className="text-6xl xl:text-8xl md:text-7xl text-gray-600">
+            I'm Kabilan
           </h1>
-          <img
-            className="p-5 md:h-32 md:w-32 h-28 w-28"
-            src="hello.gif"
-            alt="World!"
-          />
-        </div>
-        <h1 className="text-6xl xl:text-8xl md:text-7xl text-gray-800">
-          I'm Kabilan
-        </h1>
-        <h1 className="font-normal text-xl xl:text-6xl md:text-5xl text-gray-800">
-          I Develop Web and Mobile App
-        </h1>
-        <div className="px-1 flex gap-x-8 text-gray-800 text-3xl">
-          <span className="transform hover:scale-125 brandico-linkedin" />
-          <span className="transform hover:scale-125 brandico-github" />
-          <span className="transform hover:scale-125 entypo-mail" />
-          <span className="transform hover:scale-125 entypo-newspaper" />
+          <h1 className="font-normal text-xl xl:text-6xl md:text-5xl text-gray-600">
+            I Develop Web and Mobile App
+          </h1>
+          <div className="px-1 flex gap-x-8 text-gray-600 text-3xl">
+            <span className="transform hover:scale-125 brandico-linkedin" />
+            <span className="transform hover:scale-125 brandico-github" />
+            <span className="transform hover:scale-125 entypo-mail" />
+            <span className="transform hover:scale-125 entypo-newspaper" />
+          </div>
         </div>
       </div>
-      <span className="justify-self-center self-end text-3xl animate-bounce fontawesome-download" />
+      <span className="justify-self-end   text-3xl animate-bounce fontawesome-download" />
     </div>
   );
 };
