@@ -12,7 +12,7 @@ export const links = [
     icon: "entypo-mail",
   },
   {
-    url: "https://github.com/kabi175/kabi175/blob/main/README.md",
+    url: "https://docs.google.com/document/d/1eHgkxdEzoW6Gkju5QQrdnFUeaKhbgAnEWu2FFWFWzwA/edit?usp=sharing",
     icon: "entypo-newspaper",
   },
 ];
@@ -41,8 +41,17 @@ export const frameworks = [
 
 export const tools = ["Postgresql", "MongoDB", "Redis", "Docker", "Linux"];
 
+export const Icons = {
+  cpp: "",
+  go: "",
+  js: "",
+  ts: "",
+  python: "",
+  react: "",
+};
+
 /*
- *   Project{
+ * Project{
  * title
  * description
  * language
@@ -54,46 +63,28 @@ export const projects = [
   {
     title: "Chat App",
     description:
-      " ⚡️ Handy script for HackerRank, HackerEarth and CodeChef TCs Generation. ",
-    language: "go",
-    repoUrl: "https://github.com/kabi175",
-    demoUrl: "https://github.com/kabi175",
+      "A Real-time Chat Application, that allows multiple users to send and receive messages at the same moment.",
+    language: ["go"],
+    repoUrl: "https://github.com/kabi175/chat-app-go/",
   },
   {
-    title: "Chat App",
-    description:
-      " ⚡️ Handy script for HackerRank, HackerEarth and CodeChef TCs Generation. ",
-    language: "go",
-    repoUrl: "https://github.com/kabi175",
+    title: "Translator",
+    description: "Markdown to HTML converter built with Go and Regex.",
+    language: ["go"],
+    repoUrl: "https://github.com/kabi175/translator",
   },
   {
-    title: "Chat App",
+    title: "E-Commerce App",
     description:
-      " ⚡️ Handy script for HackerRank, HackerEarth and CodeChef TCs Generation. ",
-    language: "go",
-    repoUrl: "https://github.com/kabi175",
+      "A full-stack application built with React, Go and REST API, which allows users to buy and sell their products.",
+    language: ["react", "go"],
+    repoUrl: "https://github.com/kabi175/e-cart",
   },
   {
-    title: "Chat App",
+    title: "Social Media Application",
     description:
-      " ⚡️ Handy script for HackerRank, HackerEarth and CodeChef TCs Generation. ",
-    language: "go",
-    repoUrl: "https://github.com/kabi175",
-  },
-  {
-    title: "Chat App",
-    description:
-      " ⚡️ Handy script for HackerRank, HackerEarth and CodeChef TCs Generation. ",
-    language: "go",
+      "A cross platform mobile app that allows users to post images ,short videos and comment on posts.",
+    language: ["react", "js"],
     repoUrl: "https://github.com/kabi175",
   },
 ];
-
-export const Icons = {
-  cpp: "",
-  go: "",
-  js: "",
-  ts: "",
-  python: "",
-  react: "",
-};
