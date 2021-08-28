@@ -5,7 +5,7 @@ const SkillSection = ({ titile, list }) => {
   return (
     <div className="pb-5 xl:grid xl:place-items-center">
       <h1 className="text-3xl pb-3 font-black text-white">{titile}</h1>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap justify-center">
         {list.map((value, id) => (
           <div
             key={id}
