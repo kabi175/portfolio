@@ -21,13 +21,14 @@ const About = () => {
             I Develop Web and Mobile App
           </h1>
           <div className="px-1 flex gap-x-8  text-3xl">
-            {links.map(({ url, icon }) => {
+            {links.map(({ url, icon }, id) => {
               return (
                 <a
                   href={url}
-                  className="transform hover:scale-125"
                   target="_blank"
                   rel="noreferrer"
+                  key={id}
+                  className="transform hover:scale-125"
                 >
                   <span className={icon} />
                 </a>
