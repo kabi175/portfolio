@@ -1,4 +1,5 @@
 {
+  "homepage": "https://kabi175.github.io/portfolio/",
   "name": "web-page",
   "version": "0.1.0",
   "private": true,
@@ -17,6 +18,8 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
