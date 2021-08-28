@@ -3,7 +3,7 @@ import { Icons } from "../data";
 
 function ProjectCard({ title, description, language, repoUrl, demoUrl }) {
   return (
-    <div className="w-96 boerder border-2 border-gray-200 rounded mx-7 my-5 p-5  shadow-xl flex flex-col flex-nowrap transform hover:scale-125">
+    <div className="w-96 boerder border-2 border-gray-200 rounded mx-7 my-5 p-5  shadow-xl flex flex-col flex-nowrap flex-grow-0 transform hover:scale-125">
       <h1 className="self-start text-2xl font-bold ">{title}</h1>
       <p className="text-gray-600 py-4">{description}</p>
       <span className={Icons[language] | ""} />
@@ -12,7 +12,7 @@ function ProjectCard({ title, description, language, repoUrl, demoUrl }) {
           href={repoUrl}
           target="_blank"
           rel="noreferrer"
-          className="place-self-start text-lg text-indigo-800 font-bold"
+          className="place-self-start text-lg text-blue-500 font-bold"
         >
           {"📁 CODE"}
         </a>
@@ -22,7 +22,7 @@ function ProjectCard({ title, description, language, repoUrl, demoUrl }) {
           rel="noreferrer"
           className={`${
             demoUrl ? "place-self-end" : "hidden"
-          } text-lg text-indigo-800 font-bold`}
+          } text-lg text-bule-500 font-bold`}
         >
           {" "}
           {"📺 DEMO"}{" "}
