@@ -1,2 +1,2 @@
-# Personal Portfolio site
-Create with ReactJS and Tailwind CSS
+# Personal Portfolio Site
+Created with ReactJS and Tailwind CSS.
