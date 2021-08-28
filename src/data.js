@@ -57,6 +57,7 @@ export const projects = [
       " ⚡️ Handy script for HackerRank, HackerEarth and CodeChef TCs Generation. ",
     language: "go",
     repoUrl: "https://github.com/kabi175",
+    demoUrl: "https://github.com/kabi175",
   },
   {
     title: "Chat App",
