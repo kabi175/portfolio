@@ -1,28 +1,5 @@
 import React from "react";
-
-const languages = [
-  "C++",
-  "Go",
-  "JavaScript",
-  "TypeScript",
-  "Python",
-  "HTML",
-  "CSS",
-];
-
-const frameworks = [
-  "FastAPI",
-  "NodeJS",
-  "ExpressJS",
-  "React",
-  "React Native",
-  "Redux",
-  "MobX",
-  "Tailwind CSS",
-  "Bootstrap",
-];
-
-const tools = ["Postgresql", "MongoDB", "Redis", "Docker", "Linux"];
+import { languages, frameworks, tools } from "../data";
 
 const SkillSection = ({ titile, list }) => {
   return (
