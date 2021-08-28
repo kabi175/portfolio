@@ -14,7 +14,7 @@ const About = () => {
               alt="World!"
             />
           </div>
-          <h1 className="text-6xl xl:text-8xl md:text-7xl text-gray-600">
+          <h1 className="text-5xl xl:text-8xl md:text-7xl text-gray-600">
             I'm Kabilan
           </h1>
           <h1 className="font-normal text-xl xl:text-6xl md:text-5xl">
