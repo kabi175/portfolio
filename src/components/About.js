@@ -1,44 +1,33 @@
-import * as React from "react";
-import { links } from "../data";
+import React from 'react';
+import Icons from './Icons';
 
-const About = () => {
-  return (
-    <div className="h-screen bg-white flex flex-col  justify-center items-center font-semibold text-gray-600">
-      <div className="flex-grow flex items-center">
-        <div className="grid gap-y-5 place-items-center xl:gap-y-10 md:gap-y-8">
-          <div className="flex items-center">
-            <h1 className="text-6xl xl:text-8xl md:text-7xl"> Hello </h1>
-            <img
-              className="p-5 md:h-32 md:w-32 h-28 w-28"
-              src="hello.gif"
-              alt="World!"
-            />
-          </div>
-          <h1 className="text-5xl xl:text-8xl md:text-7xl text-gray-600">
-            I'm Kabilan
-          </h1>
-          <h1 className="font-normal text-xl xl:text-6xl md:text-5xl">
-            I Develop Web and Mobile App
-          </h1>
-          <div className="px-1 flex gap-x-8  text-3xl">
-            {links.map(({ url, icon }, id) => {
-              return (
-                <a
-                  href={url}
-                  target="_blank"
-                  rel="noreferrer"
-                  key={id}
-                  className="transform hover:scale-125"
-                >
-                  <span className={icon} />
-                </a>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-      <span className="justify-self-end text-3xl animate-bounce fontawesome-download" />
-    </div>
-  );
-};
-export default About;
+export default function About() {
+	return (
+		<div className='bg-white py-10 px-5  flex flex-col justify-center items-center'>
+			<h1 className='text-5xl font-bold'>Hello World! 👋</h1>
+			<div className='py-5 text-xl text-gray-600  xl:w-4/6'>
+				<p className='py-5'>
+					My name is kabilan. I'm a Student who is passionate about
+					software development and competitive programming.
+				</p>
+				<p className='py-5'>
+					I enjoy learning new technologies in the ever-changing
+					computer science field and thrive to build upon my existing
+					knowledge with experience.
+				</p>
+				<p className='py-5'>
+					Get in touch at{' '}
+					<a
+						href='mailto:kabilan-muthusamy@outlook.com'
+						target='_blank'
+						rel='noreferrer'
+						className='font-semibold hover:underline'
+					>
+						kabilan-muthusamy@outlook.com
+					</a>
+				</p>
+			</div>
+			<Icons />
+		</div>
+	);
+}
