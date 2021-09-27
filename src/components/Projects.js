@@ -5,7 +5,7 @@ import { projects } from '../data';
 function Projets() {
 	return (
 		<div className='w-full flex flex-col items-center py-10 px-5 md:px-7'>
-			<h1 className='text-5xl font-bold text-black self-center'>
+			<h1 className='text-4xl md:text-5xl  font-bold text-black self-start md:self-center'>
 				Projects
 			</h1>
 			<div className='w-full xl:w-11/12 flex flex-row flex-wrap justify-center pt-8'>
