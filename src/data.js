@@ -1,25 +1,39 @@
 export const links = [
 	{
 		url: 'https://www.linkedin.com/in/kabilan-muthusamy',
-		icon: 'brandico-linkedin',
+		icon: 'ci:linkedin',
+		svg: true,
+		name: 'LinkedIn',
 	},
 	{
 		url: 'https://github.com/kabi175',
-		icon: 'brandico-github',
+		icon: 'akar-icons:github-fill',
+		svg: true,
+		name: 'GitHub',
 	},
 	{
 		url: 'https://docs.google.com/document/d/1eHgkxdEzoW6Gkju5QQrdnFUeaKhbgAnEWu2FFWFWzwA/edit?usp=sharing',
-		icon: 'entypo-newspaper',
+		icon: 'icon-park-outline:doc-detail',
+		svg: true,
+		name: 'Resume',
 	},
 	{
 		url: 'https://leetcode.com/kabi175/',
 		icon: 'simple-icons:leetcode',
 		svg: true,
+		name: 'Leetcode',
 	},
 	{
 		url: 'https://www.codechef.com/users/kabi175',
 		icon: 'simple-icons:codechef',
 		svg: true,
+		name: 'CodeChef',
+	},
+	{
+		url: 'https://dev.to/kabilan',
+		icon: 'mdi:dev-to',
+		svg: true,
+		name: 'Blogs',
 	},
 ];
 
