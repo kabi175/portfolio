@@ -6,10 +6,14 @@ module.exports = {
 			colors: {
 				'cloud-blue': '#40b0bd',
 			},
+			backgroundImage: {
+				cloud: "url('static/clouds.png')",
+			},
 		},
 	},
 	variants: {
 		extend: {
+			display: ['group-hover'],
 			scale: ['hover', 'focus'],
 			animation: ['hover', 'focus'],
 		},
