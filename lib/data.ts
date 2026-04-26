@@ -26,24 +26,33 @@ export const skills = [
   },
   {
     category: "Craft",
-    items: ["IntelliJ Plugin Dev", "CLI Tooling", "Performance Optimization", "System Design"],
+    items: ["System Design", "CLI Tooling", "Performance Optimization"],
   },
 ];
 
 export const projects = [
   {
-    name: "FD Booking App",
-    label: "MVP · Live on Play Store",
+    name: "Nested Money",
+    label: "MVP · 1K MAU",
     description:
-      "Mobile app that lets users browse and book Fixed Deposits across multiple banks — one interface, multiple institutions.",
-    tech: ["React Native", "Expo", "Go", "Node.js", "Razorpay"],
+      "Built a fintech platform for SIP and portfolio management (1K MAU) with personalized mutual fund recommendations. Automated KYC and banking workflows and implemented resilient transaction systems to improve reliability and reduce manual effort.",
+    tech: ["React Native", "Expo", "Java", "Spring Boot", "PostgreSQL", "Redis"],
     link: "https://play.google.com/store/apps/details?id=com.nexted.app",
-    linkLabel: "Play Store",
+    linkLabel: "Play Store"
+  },
+    {
+    name: "AlphaSqr",
+    label: "Mutual fund analysis platform",
+    description:
+      "Developed a mutual fund analytics platform with rich visualizations, enabling smarter investment decisions. Automated SEBI data validation, significantly improving accuracy and compliance.",
+    tech: ["Go", "Next.js", "Tailwind ", "PostgreSQL"],
+    link: "https://play.google.com/store/apps/details?id=com.nexted.app",
+    linkLabel: "Web"
   },
 ];
 
 export const interests = [
-  { emoji: "🤖", label: "Robotics", sub: "SLAM & autonomous systems" },
-  { emoji: "🛠️", label: "Dev Tooling", sub: "Making devs faster" },
   { emoji: "📈", label: "Scalable SaaS", sub: "Products that last" },
+  { emoji: "🛠️", label: "Dev Tooling", sub: "Making devs faster" },
+  { emoji: "🤖", label: "Robotics", sub: "SLAM & autonomous systems" }
 ];
