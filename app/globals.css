@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #f8f4ee;
+  --cream-dark: #ece5d8;
+  --ink: #1a1208;
+  --orange: #e85d2f;
+  --purple: #9b5fc0;
+  --blue: #3b82d4;
+  --yellow: #f0c040;
+  --teal: #2ab8a0;
+  --pink: #e8547a;
+  --green: #5ab848;
+}
+
+@theme inline {
+  --color-background: #111008;
+  --color-foreground: var(--ink);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #111008;
+  color: var(--ink);
+  font-family: var(--font-space), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+::selection {
+  background: #e85d2f44;
+}
+
+/* ── Paper container ── */
+.paper {
+  background: var(--cream);
+  position: relative;
+  /* Paper texture via SVG noise filter */
+  filter: url(#paper-texture);
+}
+
+/* ── Fold marks ── */
+.fold-mark {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  pointer-events: none;
+  z-index: 5;
+  /* Central crease shadow */
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0,0,0,0.07) 45%,
+    rgba(0,0,0,0.13) 50%,
+    rgba(0,0,0,0.07) 55%,
+    transparent 100%
+  );
+  height: 6px;
+}
+
+/* Sticker wiggle */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50%       { transform: rotate(3deg); }
+}
+
+/* Splat pulse */
+@keyframes splat-float {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50%       { transform: scale(1.08) rotate(5deg); }
+}
+
+.splat {
+  animation: splat-float 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Section heading */
+.section-heading {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+.section-heading::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: var(--ink);
+  border-radius: 2px;
+  margin-top: 2px;
+}
+
+/* Pill badge */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: var(--font-space), sans-serif;
+  letter-spacing: 0.01em;
+  cursor: default;
+}
+
+/* Tape strip */
+.tape {
+  background: rgba(200, 200, 220, 0.55);
+  border: 1px solid rgba(160, 160, 190, 0.45);
+  backdrop-filter: blur(2px);
+  transform: rotate(-2deg);
+  padding: 3px 24px;
+  display: inline-block;
+}
