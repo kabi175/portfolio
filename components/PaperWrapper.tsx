@@ -41,8 +41,9 @@ export default function PaperWrapper({ children }: { children: React.ReactNode }
 
   useEffect(() => {
     if (!svgRef.current) return;
-    const w = Math.min(window.innerWidth, 1200);
-    svgRef.current.setAttribute("d", tornPath(w, 60));
+    // Always use the full viewBox width (1200) so the path covers the
+    // entire SVG regardless of actual viewport size.
+    svgRef.current.setAttribute("d", tornPath(1200, 60));
   }, []);
 
   return (
