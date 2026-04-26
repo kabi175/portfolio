@@ -76,7 +76,7 @@ export default function Home() {
         <Divider />
 
         {/* TWO-COLUMN BODY */}
-        <div className="relative max-w-6xl mx-auto px-8 md:px-20 overflow-hidden">
+        <div className="relative max-w-6xl mx-auto px-8 md:px-20">
           {/* Scattered decorations */}
           <Star4 size={28} style={{ top: 60, left: -12 }} />
           <OrangeSplat size={44} style={{ top: 120, right: -10, opacity: 0.7, animationDelay: "1s" }} />

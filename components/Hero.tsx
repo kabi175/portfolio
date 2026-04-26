@@ -48,7 +48,7 @@ export default function Hero() {
   const letters = "Hey!".split("");
 
   return (
-    <section className="relative bg-[#f5f0e8] overflow-hidden px-8 md:px-20 pt-4 pb-10">
+    <section className="relative bg-[#f5f0e8] px-8 md:px-20 pt-4 pb-10">
       {/* Decorative elements */}
       <OrangeSplat style={{ width: 56, height: 56, top: "14%", left: "42%", opacity: 0.9 }} />
       <PurpleSplat style={{ width: 52, height: 52, top: "6%", right: "7%", opacity: 0.75 }} />
