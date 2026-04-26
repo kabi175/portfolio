@@ -47,19 +47,9 @@ export default function PaperWrapper({ children }: { children: React.ReactNode }
 
   return (
     <>
-      {/* SVG filter — paper grain texture */}
+      {/* SVG defs — torn edge shadow only (texture moved to CSS) */}
       <svg width="0" height="0" style={{ position: "absolute" }}>
         <defs>
-          <filter id="paper-texture" x="0%" y="0%" width="100%" height="100%">
-            <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise" />
-            <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise" />
-            <feBlend in="SourceGraphic" in2="grayNoise" mode="multiply" result="blended" />
-            <feComponentTransfer in="blended">
-              <feFuncR type="linear" slope="1.02" intercept="-0.01" />
-              <feFuncG type="linear" slope="1.02" intercept="-0.01" />
-              <feFuncB type="linear" slope="1.0" intercept="0" />
-            </feComponentTransfer>
-          </filter>
           <filter id="torn-shadow" x="-5%" y="-30%" width="110%" height="160%">
             <feDropShadow dx="0" dy="5" stdDeviation="3" floodColor="#00000070" />
             <feDropShadow dx="0" dy="2" stdDeviation="1" floodColor="#00000040" />
